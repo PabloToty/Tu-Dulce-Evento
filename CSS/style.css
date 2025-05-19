@@ -1,0 +1,112 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+body {
+    height: 150vh;
+    background-color: rgba(165, 136, 128, 0.534);
+
+    header {
+        background-color: rgb(218,182,157);
+        color: rgb(55, 45, 39);
+        width: 100%;
+        padding: 15px;
+        position: fixed;
+        z-index: 1;  
+        top: 0px;
+        
+        ul {
+            list-style: none;
+            display: flex;
+            gap: 1rem;
+            margin-right: 2rem;
+
+            li {
+                color: rgb(55, 45, 39);
+                border: 1px solid rgb(55,45,39);
+                background-color: rgba(155, 126, 118, 0.534);
+                border-radius: 2rem;
+                text-align: center;
+                font-weight: bold;
+                position: relative;
+                width: 6rem;
+                top: 10px;
+                left: 10px;
+                a {
+                    text-decoration: none;
+                    color: rgb(55, 45, 39);
+                }
+            }
+            li:hover{
+                transform: scale(1.2);
+            }
+        }
+        .logo {
+            width: 7rem;
+            height: auto;
+        }
+    }
+    main {
+        background-image: url( '../assets/img/perfil-fb.jpg');
+        background-size: contain;
+        background-repeat: no-repeat;
+        background-position: center;
+        height: 20rem;
+        text-align: center;
+    }
+
+    section {
+
+
+        text-align: center;
+        div {
+            img {
+                width: 5rem;
+                height: 5rem;
+            }
+        }
+    }
+    
+    .footer {
+        background-color: #111;
+        padding: 20px;
+        text-align: center;
+        grid-template-rows: auto; 
+        .social-button {
+            display: inline-block;
+            margin: 0 10px;
+            padding: 10px 15px;
+            color: white;
+            text-decoration: none;
+            border-radius: 8px;
+            font-weight: bold;
+            font-size: 16px;
+            transition: background 0.3s, transform 0.2s;
+        }
+        .social-button i {
+            margin-right: 8px;
+        }
+        .whatsapp {
+            background-color: #25D366;
+        }
+        .whatsapp:hover {
+            background-color: #1ebe5d;
+            transform: scale(1.05);
+        }
+        .instagram {
+            background-color: #C13584;
+        }
+        .instagram:hover {
+            background-color: #a52c6e;
+            transform: scale(1.05);
+        }
+    }
+}
+@media (max-width: 600px) {
+    body {
+        .grid-container{
+            grid-template-columns: 1fr;
+        }
+    }
+}
