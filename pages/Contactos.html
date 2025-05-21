@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Proyecto talento Tech (Pablo Carretto)</title>
+    <link rel="stylesheet" href="../CSS/style.css">
+</head>
+<body>
+    <header>
+        <form   action="https://formspree.io/f/mqaqjndk" method="POST">
+            <h1>FORMULARIO DE CONTACTO</h1><br>
+            <label for="name">Nombre</label>
+            <input type="text" id="nombre" name="name" required placeholder="Ingrese su nombre" maxlength="15" minlength="3">
+            <br><br>
+            <label for="email">Correo Electronico</label>
+            <input type="email" pattern="[a-z0-9._%+-]+@[a-z0-9.-]+\.[a-z]{2,}$" id="email" name="email" required placeholder="pepe@gmail.com">
+            <br><br>
+            <fieldset>
+                <legend>Tema a consultar</legend>
+                <label for="Decoracion">Decoracion</label>
+                <input type="radio" id="Decoracion" name="Tema" value="Decoracion">
+                <br>
+                <label for="Rellenos">Rellenos</label>
+                <input type="radio" id="Rellenos" name="Tema" value="Rellenos">
+                <br>
+                <label for="Coberturas">Coberturas</label>
+                <input type="radio" id="Coberturas" name="Tema" value="Coberturas">
+                <br><br>
+            </fieldset>
+            <textarea name="mensaje" id="mensaje" rows="4" cols="50" placeholder="Escribe tu mensaje"></textarea>
+            <button type="submit">Enviar</button>
+        </form>
+        <ul>
+            <li>
+                <a href="../Index.html">Volver</a>
+            </li>
+        </ul>
+    </header>
+</body>
+</html>
