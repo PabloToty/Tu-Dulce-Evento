@@ -129,6 +129,11 @@ body {
         }
     }
 }
+body.rellenos main {
+    background-image: none;
+    background-color: transparent;
+}
+
 @media (max-width: 600px) {
     .productos {
         display: grid;
