@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+   <meta charset="UTF-8">
+   <meta name="viewport" content="width=device-width, initial-scale=1.0">
+   <title>Coberturas - Tu Dulce Evento</title>
+   <link rel="stylesheet" href="../CSS/style.css">
+   <style>
+   main {
+      background-image: none;
+      background-color: transparent;
+   }
+   </style>
+</head>
+
+<body class="rellenos">
+   <header>
+      <div class="header">
+            <img class="logo" src="../assets/img/perfil-fb.jpg" alt="Logo">
+            <h1>Carro de Compras</h1>
+            <div class="carrito-icono">
+               <a href="./Carrito.html" onclick="handleCart()">
+                  <img src="https://cdn-icons-png.flaticon.com/512/263/263142.png" alt="Carrito">
+                  <span class="contador">0</span>
+               </a>
+            </div>
+      </div>
+      <nav>
+         <ul>
+            <li>
+               <a class="a1" href="../Index.html">Inicio</a>
+            </li>
+            <li>
+               <a class="a3" href="./Contactos.html">Contacto</a>
+            </li>
+            <li>
+               <a href="./Carrito.html">Carrito</a>
+            </li>
+         </ul>
+      </nav>
+   </header>
+
+   <section 
+   class="tablaProducto"
+   id="item-products">
+      <h2>Productos seleccionados</h2>
+      <button onclick="limpiarCarrito()">Limpiar Carrito</button>
+   </section>
+   
+   <footer class="footer">
+      <a href="https://wa.me/1234567890" class="social-button whatsapp" target="_blank" aria-label="WhatsApp">
+            <i class="fab fa-whatsapp"></i> WhatsApp
+      </a>
+      <a href="https://instagram.com/tudulceevento/?hl=es" class="social-button instagram" target="_blank" aria-label="Instagram">
+            <i class="fab fa-instagram"></i> Instagram
+      </a>
+   </footer>
+   
+   <script src="../JS/Carrito.js"></script>
+   <script src="../JS/Main.js"></script>
+</body>
+</html>

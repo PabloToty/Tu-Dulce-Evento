@@ -11,6 +11,12 @@
         <div class="header">
             <img class="logo" src="./assets/img/perfil-fb.jpg" alt="Logo">
             <h1>TU DULCE EVENTO</h1>
+            <div class="carrito-icono">
+                <a href="./pages/Carrito.html">
+                    <img src="https://cdn-icons-png.flaticon.com/512/263/263142.png" alt="Carrito">
+                    <span class="contador"></span>
+                </a>
+            </div>
         </div>
         <nav>
             <ul>
@@ -27,13 +33,15 @@
                     <a href="./pages/Coberturas.html">Coberturas</a>
                 </li>
                 <li>
-                    <a href="./pages/Contactos.html">Contactos</a>
+                    <a href="./pages/Contactos.html">Contacto</a>
                 </li>
                 <li>
                     <a href="./pages/Carrito.html">Carrito</a>
                 </li>
             </ul>
         </nav>
+        <script src="https://cdn.jsdelivr.net/npm/sweetalert2@11"></script>
+        <script src="https://cdn.jsdelivr.net/npm/sweetalert2@11"></script>
     </header>
 
     <main>
@@ -46,78 +54,70 @@
 
     <section>
         <h2>Productos</h2>
+        <h2>Bienvenidos, debe elegir para cotizar su torta, un tipo de relleno, una decoracion y una cobertura</h2>
         <div class="productos">
-            <div class="tarjetas">
+            <div class="tarjetas" data-id="dulce_de_leche" data-tipo="relleno">
                 <a href="./pages/Rellenos.html">
                     <h3>Dulce de Leche</h3>
                     <img src="./assets/img/Dulce-de-leche.jpg" alt="">
                     <p>Relleno</p>
-                    <p>Precio: $ xxxx</p>
-                    <button>Añadir carrito</button>
+                    <h1 class="Tarjeta-precio">$ <span class="">100</span></h1>
                 </a>
+                <button id="boton-carrito">Añadir carrito</button>
             </div>
-            <div class="tarjetas">
+            <div class="tarjetas" data-id="nutella" data-tipo="relleno">
                 <a href="./pages/Rellenos.html">
                     <h3>Nutella</h3>
                     <img src="./assets/img/Nutella.jpg" alt="">
                     <p>Relleno</p>
-                    <p>Precio: $ xxxx</p>
-                    <button>Añadir carrito</button>
+                    <h1 class="Tarjeta-precio">$ <span class="">120</span></h1>
                 </a>
+                <button id="boton-carrito">Añadir carrito</button>
             </div>
-            <div class="tarjetas">
+            <div class="tarjetas" data-id="deco_simple" data-tipo="decoracion">
                 <a href="./pages/Decoracion.html">
                     <h3>Deco Simple</h3>
                     <img src="./assets/img/Simple.jpg" alt="">
                     <p>Decoracion</p>
-                    <p>Precio: $ xxxx</p>
-                    <button>Añadir carrito</button>
+                    <h1 class="Tarjeta-precio">$ <span class="">200</span></h1>
                 </a>
+                <button id="boton-carrito">Añadir carrito</button>
             </div>
-            <div class="tarjetas">
-                <a href="./pages/Decoracion.html">
-                    <h3>Deco Alta</h3>
-                    <img src="./assets/img/Alta.jpg" alt="">
-                    <p>Decoracion</p>
-                    <p>Precio: $ xxxx</p>
-                    <button>Añadir carrito</button>
-                </a>
-            </div> 
-            <div class="tarjetas">
+            <div class="tarjetas" data-id="deco_media" data-tipo="decoracion">
                 <a href="./pages/Decoracion.html">
                     <h3>Deco Media</h3>
                     <img src="./assets/img/Media.jpg" alt="">
                     <p>Decoracion</p>
-                    <p>Precio: $ xxxx</p>
-                    <button>Añadir carrito</button>
+                    <h1 class="Tarjeta-precio">$ <span class="">220</span></h1>
                 </a>
+                <button id="boton-carrito">Añadir carrito</button>
             </div>
-            <div class="tarjetas" >
+            <div class="tarjetas" data-id="deco_premium" data-tipo="decoracion">
                 <a href="./pages/Decoracion.html">
                     <h3>Deco Premium</h3>
                     <img src="./assets/img/Premium.jpg" alt="">
                     <p>Decoracion</p>
-                    <p>Precio: $ xxxx</p>
-                    <button>Añadir carrito</button>
+                    <h1 class="Tarjeta-precio">$ <span class="">240</span></h1>
                 </a>
+                <button id="boton-carrito">Añadir carrito</button>
             </div>                                 
-            <div class="tarjetas">
+            <div class="tarjetas" data-id="crema" data-tipo="cobertura">
                 <a href="./pages/Coberturas.html">
                     <h3>Crema</h3>
                     <img src="./assets/img/Crema.jpg" alt="">
                     <p>Cobertura</p>
-                    <p>Precio: $ xxxx</p>
-                    <button>Añadir carrito</button>
+                    <h1 class="Tarjeta-precio">$ <span class="">300</span></h1>
                 </a>
+                <button id="boton-carrito">Añadir carrito</button>
             </div>
-            <div class="tarjetas">
+            <div class="tarjetas" data-id="ballina" data-tipo="cobertura">
                 <a href="./pages/Coberturas.html">
                     <h3>Ballina</h3>
                     <img src="./assets/img/Ballina-forrada.jpg" alt="">
                     <p>Cobertura</p>
-                    <p>Precio: $ xxxx</p>
-                    <button>Añadir carrito</button>
+                    <h1 class="Tarjeta-precio">$ <span class="">320</span></h1>
                 </a>
+                <button id="boton-carrito">Añadir carrito</button>
             </div>
         </div>
     </section>
@@ -130,5 +130,7 @@
             <i class="fab fa-instagram"></i> Instagram
         </a>
     </footer>
+    <script src="./JS/Main.js"></script>
+    <script src="./JS/Carrito.js"></script>
 </body>
 </html>
